@@ -14,14 +14,16 @@ export default function AnimatedText() {
   }, []);
 
   return (
-    <>
+    <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
       <div className="relative mb-4 overflow-hidden">
         <div
           className={`transform transition-transform duration-500 ${
             isOpen ? "translate-y-0" : "translate-y-full"
           }`}
         >
-          <h1 className="text-4xl font-bold">HAMZA ZAIN BHATTI</h1>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center">
+            HAMZA ZAIN
+          </h1>
         </div>
       </div>
       <div className="relative mb-8 overflow-hidden">
@@ -30,13 +32,13 @@ export default function AnimatedText() {
             isOpen ? "translate-y-0" : "translate-y-full"
           }`}
         >
-          <p className="text-center text-sm">
-            MERN Stack Developer, Web Developer, Python Automation Developer,{" "}
-            <br />
+          <p className="text-center text-sm sm:text-base md:text-lg lg:text-xl">
+            MERN Stack Developer, Web Developer, Python Automation Developer,
+            <br className="hidden sm:inline" />
             Repository Maintainer and a Computer Science Bachelor Student.
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
