@@ -12,7 +12,7 @@ export default function BackgroundImage() {
 
   return (
     <div
-      className={`absolute inset-0 bg-gray-900 transition-opacity duration-1000 ${
+      className={`fixed inset-0 bg-gray-900 transition-opacity duration-1000 ${
         isLoaded ? "opacity-100" : "opacity-0"
       }`}
     >

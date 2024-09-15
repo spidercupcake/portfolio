@@ -15,20 +15,18 @@ const technologies = [
 
 export default function TechStack() {
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-gray-900 bg-opacity-30 backdrop-blur-md">
-      <div className="flex justify-center items-center space-x-4 overflow-y-auto h-20">
-        {technologies.map((tech) => (
-          <div key={tech.name} className="flex-shrink-0">
-            <Image
-              src={tech.icon}
-              alt={`${tech.name} icon`}
-              width={32}
-              height={32}
-              className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 hover:scale-110 transition-transform"
-            />
-          </div>
-        ))}
-      </div>
+    <div className="flex justify-center items-center space-x-4 overflow-y-auto h-20">
+      {technologies.map((tech) => (
+        <div key={tech.name} className="flex-shrink-0">
+          <Image
+            src={tech.icon}
+            alt={`${tech.name} icon`}
+            width={32}
+            height={32}
+            className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 hover:scale-110 transition-transform"
+          />
+        </div>
+      ))}
     </div>
   );
 }

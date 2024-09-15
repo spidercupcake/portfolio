@@ -3,6 +3,7 @@ import ProfileImage from "@/components/ProfileImage";
 import AnimatedText from "@/components/AnimatedText";
 import TechStack from "@/components/TechStack";
 import SocialMediaProfile from "@/components/SocialMediaProfile";
+import More from "@/components/More";
 
 const BackgroundImage = dynamic(() => import("@/components/BackgroundImage"), {
   ssr: false,
@@ -11,13 +12,16 @@ const BackgroundImage = dynamic(() => import("@/components/BackgroundImage"), {
 
 export default function Home() {
   return (
-    <div className="relative h-screen w-full overflow-hidden bg-gray-900 text-white">
+    <div className="grid grid-rows relative h-full w-full bg-gray-900 text-white no-scrollbar">
       <BackgroundImage />
-      <div className="relative z-10 flex h-full flex-col items-center justify-center">
+      <div className="grid place-content-center place-items-center gap-14 h-svh w-full z-20">
         <ProfileImage />
         <AnimatedText />
-        <TechStack />
         <SocialMediaProfile />
+      </div>
+      <div className=" grid h-[1000px] z-10 bg-transparent bg-opacity-30 backdrop-blur-md">
+        <TechStack />
+        <More />
       </div>
     </div>
   );
