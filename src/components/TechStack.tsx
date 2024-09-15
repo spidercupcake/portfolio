@@ -15,7 +15,7 @@ const technologies = [
 
 export default function TechStack() {
   return (
-    <div className="flex justify-center items-center space-x-4 overflow-y-auto h-20">
+    <div className="flex justify-center items-center space-x-4 overflow-y-auto">
       {technologies.map((tech) => (
         <div key={tech.name} className="flex-shrink-0">
           <Image

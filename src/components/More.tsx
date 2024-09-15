@@ -2,7 +2,7 @@ import React from "react";
 
 export default function More() {
   return (
-    <div className="text-lg text-center mx-40">
+    <div className="text-lg text-center m-40">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam imperdiet
       diam sit amet diam facilisis, eu egestas ex dignissim. Donec ex mi,
       gravida sed ligula sit amet, dapibus lacinia sapien. Morbi egestas metus
