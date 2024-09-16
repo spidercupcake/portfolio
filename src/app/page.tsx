@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <main className="grid grid-rows relative h-full w-full bg-zinc-900 text-white no-scrollbar">
       <BackgroundImage />
-      <div className="grid place-content-center place-items-center gap-14 h-svh w-full z-20">
+      <div className="grid place-content-center place-items-center gap-14 min-h-[calc(100vh-5rem)] w-full z-20">
         <ProfileImage />
         <AnimatedText />
         <SocialMediaProfile />

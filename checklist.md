@@ -1,3 +1,8 @@
+# ERROR FIXES
+
+- Fix mouse effects positioning on Footer.
+- Try making Footer without framer-motion.
+
 # IDEA
 
 **Basic layout**
